@@ -20,6 +20,7 @@ const Inicio = () => {
                                     imagen={producto.urlImagen}
                                     titulo={producto.nombre}
                                     descripcion={producto.descripcion}
+                                    precio={producto.precio}
                                 />
                             )
                         }
