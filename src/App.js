@@ -3,8 +3,7 @@ import './App.css';
 import {BrowserRouter as Router,  Route, Routes} from 'react-router-dom';
 import Navbar from './components/navegacion/Navbar';
 import Inicio from './components/pages/Inicio';
-import Pokemon from './components/pages/Pokemon';
-import Items from './components/pages/Items';
+import Perfil from './components/pages/Perfil.js';
 import Footer from './components/footer/Footer';
 
 
@@ -15,7 +14,7 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path='/' element={<Inicio />}/>
-          <Route path='/carrito' element={<Items />}/>
+          <Route path='/perfil' element={<Perfil/>}/>
         </Routes>
         <Footer></Footer>
       </Router>
