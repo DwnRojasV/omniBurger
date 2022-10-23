@@ -3,6 +3,7 @@ import pagesCss from './pages.css';
 import Carrusel from "../carrusel/Carrusel";
 import Card from "../card/Card";
 import datosProductos from '../../data/productos.json'
+import CarritoOffcanvas from "../carrito/CarritoOffcanvas";
 
 const Inicio = () => {
 
@@ -21,6 +22,8 @@ const Inicio = () => {
                                     titulo={producto.nombre}
                                     descripcion={producto.descripcion}
                                     precio={producto.precio}
+                                    id={producto.id}
+                                    cantidad={producto.cantidad}
                                 />
                             )
                         }
@@ -29,6 +32,7 @@ const Inicio = () => {
                 
 
             </div>
+            <CarritoOffcanvas/>
         </div>
     )
 };
