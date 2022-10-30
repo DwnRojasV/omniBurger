@@ -1,8 +1,12 @@
 import React from "react";
 
 const AdminVentas = () => {
-    const listaVentas = JSON.parse(localStorage.getItem("compras"));
-
+    let listaVentas = JSON.parse(localStorage.getItem("compras")); 
+    if(localStorage.getItem("compras")==null){
+        localStorage.setItem("compras", JSON.stringify([]))
+    } else {
+         listaVentas = JSON.parse(localStorage.getItem("compras"));
+    }
 
     return (
         <table className="table" >
