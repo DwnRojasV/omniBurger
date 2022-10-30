@@ -2,12 +2,13 @@ import React from "react";
 import pagesCss from './pages.css';
 import Carrusel from "../carrusel/Carrusel";
 import Card from "../card/Card";
-// import datosProductos from '../../data/productos.json'
+import datosProductosJSON from '../../data/productos.json'
 import CarritoOffcanvas from "../carrito/CarritoOffcanvas";
 
 const Inicio = () => {
-    let datosProductos
+    let datosProductos 
     if(localStorage.getItem("productos")==null){
+        localStorage.setItem(JSON.stringify(datosProductosJSON))
         datosProductos = JSON.parse(localStorage.getItem("productos"));
     } else {
          datosProductos = JSON.parse(localStorage.getItem("productos"));
