@@ -6,7 +6,12 @@ import Card from "../card/Card";
 import CarritoOffcanvas from "../carrito/CarritoOffcanvas";
 
 const Inicio = () => {
-const datosProductos = JSON.parse(localStorage.getItem("productos"));
+    let datosProductos
+    if(localStorage.getItem("productos")==null){
+        datosProductos = JSON.parse(localStorage.getItem("productos"));
+    } else {
+         datosProductos = JSON.parse(localStorage.getItem("productos"));
+    }
     return (
         <div className="pages">
             <Carrusel />
