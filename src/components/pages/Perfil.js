@@ -1,6 +1,5 @@
 import React from 'react';
 import CarritoOffcanvas from '../carrito/CarritoOffcanvas';
-import DatosUsuario from '../datos-usuario/DatosUsuario';
 import Admin from '../admin/Admin';
 import AddProducto from '../addProducto/AddProducto';
 import AdminVentas from '../admin/AdminVentas';
@@ -10,7 +9,6 @@ const Perfil = () => {
   return (
     <div>
       <h2 className="pages__titulo">Perfil de Usuario</h2>
-      {/* <DatosUsuario /> */}
       <div className='container border border-secondary rounded-5'>
         <h3 className='p-5'>Administrar Productos</h3>
         <Admin></Admin>
