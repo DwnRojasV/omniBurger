@@ -2,11 +2,11 @@ import React from "react";
 import pagesCss from './pages.css';
 import Carrusel from "../carrusel/Carrusel";
 import Card from "../card/Card";
-import datosProductos from '../../data/productos.json'
+// import datosProductos from '../../data/productos.json'
 import CarritoOffcanvas from "../carrito/CarritoOffcanvas";
 
 const Inicio = () => {
-
+const datosProductos = JSON.parse(localStorage.getItem("productos"));
     return (
         <div className="pages">
             <Carrusel />
