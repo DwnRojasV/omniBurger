@@ -8,7 +8,7 @@ import CarritoOffcanvas from "../carrito/CarritoOffcanvas";
 const Inicio = () => {
     let datosProductos 
     if(localStorage.getItem("productos")==null){
-        localStorage.setItem(JSON.stringify(datosProductosJSON))
+        localStorage.setItem("productos", JSON.stringify(datosProductosJSON))
         datosProductos = JSON.parse(localStorage.getItem("productos"));
     } else {
          datosProductos = JSON.parse(localStorage.getItem("productos"));
